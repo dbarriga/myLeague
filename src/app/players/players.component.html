@@ -1,0 +1,14 @@
+<mat-grid-list cols="4" rowHeight="400" style="padding:10px" *ngIf="players.length > 0 else noData">
+  <mat-grid-tile *ngFor="let p of players; let i = index">
+    <app-player [ngClass]="{ 'inactivePlayer': !p.status, 'activePlayer': p.status }" [player]="p" [team]="name"></app-player>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #noData>
+  <div class="mat-elevation-z8 noData">
+
+    <mat-spinner *ngIf="isLoading" class="spinner"></mat-spinner>
+    <h2 *ngIf="isLoading">Loading</h2>
+
+    <h2 *ngIf="!isLoading">No Record available</h2>
+  </div>

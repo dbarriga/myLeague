@@ -1,6 +1,11 @@
 <mat-toolbar color="primary" class="mat-elevation-z6 main-menu">
   Sport League
-  <button mat-button>Games</button>
-  <button mat-button>Teams</button>
-  <button mat-button>Players</button>
+  <button mat-button routerLink="teams">Teams</button>
+  <button mat-button routerLink="players">Players</button>
 </mat-toolbar>
+
+<div class="container">
+
+  <router-outlet></router-outlet>
+
+</div>

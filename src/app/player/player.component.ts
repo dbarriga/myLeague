@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Player } from './../shared/interfaces/player.interface';
 
 @Component({
   selector: 'app-player',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
+  @Input('player')
+  player: Player;
+
+  // jugador: string = 'Sergio';
+
+  @Input()
+  team: string = 'No Team';
+
+  @Output('onActivate')
+  status: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  deactivate() {
+    this.status.emit(false);
   }
 
 }

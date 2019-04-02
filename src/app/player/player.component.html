@@ -1,3 +1,13 @@
-<p>
-  player works!
-</p>
+<mat-card class="player-card">
+    <mat-card-header>
+      <div mat-card-avatar class="player-header-image"></div>
+      <mat-card-title>{{ player.nombre }}</mat-card-title>
+      <mat-card-subtitle>{{ team }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="http://via.placeholder.com/200x200?text=player-photo">
+  
+    <mat-card-actions align="end">
+      <button mat-button color="primary" (click)="deactivate()" [disabled]="!player.estado">Deactivate</button>
+    </mat-card-actions>
+  </mat-card>
+  

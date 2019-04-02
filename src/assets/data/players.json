@@ -1,0 +1,65 @@
+[{
+    "name": "Jeff",
+    "age": "35",
+    "nickname": "cat",
+    "photo": "image.jpg",
+    "position": "infielder",
+    "status": true
+  },
+  {
+    "name": "Manny",
+    "age": "25",
+    "nickname": "Lolo",
+    "photo": "image.jpg",
+    "position": "infielder",
+    "status": true
+  },
+  {
+    "name": "Hugh",
+    "age": "25",
+    "nickname": "Sheriff",
+    "photo": "image.jpg",
+    "position": "infielder",
+    "status": true
+  },
+  {
+    "name": "Frank",
+    "age": "22",
+    "nickname": "dragon",
+    "photo": "image.jpg",
+    "position": "catcher",
+    "status": true
+  },
+  {
+    "name": "Louis",
+    "age": "22",
+    "nickname": "duck",
+    "photo": "image.jpg",
+    "position": "outfielder",
+    "status": true
+  },
+  {
+    "name": "Ernest",
+    "age": "28",
+    "nickname": "stone",
+    "photo": "image.jpg",
+    "position": "outfielder",
+    "status": true
+  },
+  {
+    "name": "John",
+    "age": "20",
+    "nickname": "captain",
+    "photo": "image.jpg",
+    "position": "lateral",
+    "status": true
+  },
+  {
+    "name": "Joey",
+    "age": "40",
+    "nickname": "dog",
+    "photo": "image.jpg",
+    "position": "lateral",
+    "status": true
+  }
+]
